@@ -1,0 +1,51 @@
+﻿What failures did you handle in your code? how do you handle them?
+1. Receive from server could not get complete message, use receiveAll which compared the received body length to the content-length tag in header to ensure it is completely send.
+Since a while loop is used for receive all and the loop will be stop when received message reaches required length, error happened in some cases remaining length is negative and the loop can not stop. Then figure out the error comes from the comparison of int and size_t, and the error fixed. 
+2. First response pointers are in proxy.cpp and resulted in empty cache, then find way to handle this memory free in cache to avoid memory leak. 
+3. In GET:
+1. If it is a chunked response,  every time we receive the response from server, we check if the last 5 chars are “0\r\n\r\n”. If yes, we stop hearing from server.
+2. If it is a response with content_length, we record this number and every time we receive from server, we store the body length received so far, if it is larger or equal to content_length, we stop hearing from the server.
+
+
+Some special cases handled:
+1. In cases that a response that has neither a cache validator nor an explicit expiration time, we consider these responses are not useful to store according to RFC7234, so just handle it as no-store. For example, if we request http://www.gov.cn:
+HTTP/1.1 200 OK
+Date: Tue, 28 Feb 2023 06:25:09 GMT
+Content-Type: text/html
+Content-Length: 34796
+Connection: keep-alive
+Server: Apache
+Accept-Ranges: bytes
+X-Powered-By: ModLayout/5.1
+X-Ser: BC219_dx-lt-yd-jiangsu-suqian-5-cache-5, BC7_US-Texas-Dallas-1-cache-3
+X-Cache: HIT from BC7_US-Texas-Dallas-1-cache-3(baishan)
+There is no cache-control or last-modified time. We choose to not cache this request.
+
+
+2. If no cache validator provided(cache control) but has last modified time, we use heuristic strategy followed by RFC7234. We choose to store that response in cache and calculate its expiration time as 10 percent of the subtraction of current time to the last modified time.
+
+
+You should know the exception guarantees you make (Please specify them).
+
+
+Basic exception guarantee with:
+1. Wrong format of request from client will be handled by throwing RequestError exception and returned with 400 Bad Request.
+a. In HttpParser.h, when the format of the Headers is not correct, the constructor will throw RequestError()
+b. In HttpRequest.h, when the method of request is not belong to GET, POST, CONNECT, throw RequestError()
+2. If our proxy:
+   1. failed to send recv from the server(recv return -1)
+   2. If it is neither a 200 nor 301 response
+   3. If the response body contains neither content-length or Transfer-Encoding 
+   4. If the response has a content_length field but the response body it send has less length than content_length
+We throw the ResponseError(), which will be catched in the do_get() function. Which will result in calling badgateway() function, sending 502 badgateway to the browser.
+3. connect() failure, throw a SocketConnectError exception
+4. accept() failure, throw a SocketAcceptError exception
+
+
+
+
+
+
+Issues related to cache:
+1. The cache does not have secure guaranteen, there is a risk that attackers could gain access to the cache.
+2. There would be risk that attackers could inject malicious data into the cache and then be served to other client

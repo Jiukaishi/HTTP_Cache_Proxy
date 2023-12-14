@@ -1,0 +1,125 @@
+1: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:04 2023
+1: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+1: Responding "HTTP/1.1 200 OK"
+2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:04 2023
+2: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+2: Responding "HTTP/1.1 200 OK"
+2: Tunnel closed
+3: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:10 2023
+3: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+3: Responding "HTTP/1.1 200 OK"
+4: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:11 2023
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+5: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+5: Responding "HTTP/1.1 200 OK"
+6: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+6: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+6: Responding "HTTP/1.1 200 OK"
+7: "CONNECT www.gstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+7: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
+7: Responding "HTTP/1.1 200 OK"
+8: "CONNECT www.gstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+8: Requesting "CONNECT www.gstatic.com:443 HTTP/1.1" from www.gstatic.com
+8: Responding "HTTP/1.1 200 OK"
+9: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+10: "POST http://ocsp.digicert.com/ HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+11: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+12: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:13 2023
+14: "CONNECT ogs.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:16 2023
+14: Requesting "CONNECT ogs.google.com:443 HTTP/1.1" from ogs.google.com
+14: Responding "HTTP/1.1 200 OK"
+8: Tunnel closed
+15: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:16 2023
+16: "CONNECT play.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:17 2023
+16: Requesting "CONNECT play.google.com:443 HTTP/1.1" from play.google.com
+16: Responding "HTTP/1.1 200 OK"
+17: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:17 2023
+18: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:18 2023
+18: Requesting "CONNECT fonts.gstatic.com:443 HTTP/1.1" from fonts.gstatic.com
+18: Responding "HTTP/1.1 200 OK"
+19: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:18 2023
+19: Requesting "CONNECT fonts.gstatic.com:443 HTTP/1.1" from fonts.gstatic.com
+19: Responding "HTTP/1.1 200 OK"
+20: "CONNECT play.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:19 2023
+20: Requesting "CONNECT play.google.com:443 HTTP/1.1" from play.google.com
+20: Responding "HTTP/1.1 200 OK"
+18: Tunnel closed
+22: "CONNECT adservice.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:19 2023
+22: Requesting "CONNECT adservice.google.com:443 HTTP/1.1" from adservice.google.com
+22: Responding "HTTP/1.1 200 OK"
+23: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:19 2023
+23: Requesting "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from googleads.g.doubleclick.net
+23: Responding "HTTP/1.1 200 OK"
+24: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:05:20 2023
+25: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:19 2023
+25: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+25: Responding "HTTP/1.1 200 OK"
+25: Tunnel closed
+27: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:20 2023
+27: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+27: Responding "HTTP/1.1 200 OK"
+27: Tunnel closed
+26: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:20 2023
+26: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+26: Responding "HTTP/1.1 200 OK"
+26: Tunnel closed
+28: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:20 2023
+28: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+28: Responding "HTTP/1.1 200 OK"
+30: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:20 2023
+30: Requesting "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from mozilla.cloudflare-dns.com
+30: Responding "HTTP/1.1 200 OK"
+29: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:20 2023
+29: Requesting "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from mozilla.cloudflare-dns.com
+29: Responding "HTTP/1.1 200 OK"
+28: Tunnel closed
+29: Tunnel closed
+31: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:21 2023
+32: "CONNECT www.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:23 2023
+32: Requesting "CONNECT www.baidu.com:443 HTTP/1.1" from www.baidu.com
+32: Responding "HTTP/1.1 200 OK"
+33: "POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:24 2023
+34: "CONNECT dss0.bdstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:26 2023
+34: Requesting "CONNECT dss0.bdstatic.com:443 HTTP/1.1" from dss0.bdstatic.com
+34: Responding "HTTP/1.1 200 OK"
+34: Tunnel closed
+44: "CONNECT pss.bdstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:27 2023
+44: Requesting "CONNECT pss.bdstatic.com:443 HTTP/1.1" from pss.bdstatic.com
+44: Responding "HTTP/1.1 200 OK"
+46: "CONNECT hectorstatic.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:28 2023
+46: Requesting "CONNECT hectorstatic.baidu.com:443 HTTP/1.1" from hectorstatic.baidu.com
+46: Responding "HTTP/1.1 200 OK"
+51: "CONNECT dss0.bdstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:28 2023
+51: Requesting "CONNECT dss0.bdstatic.com:443 HTTP/1.1" from dss0.bdstatic.com
+51: Responding "HTTP/1.1 200 OK"
+50: "CONNECT sp1.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:28 2023
+50: Requesting "CONNECT sp1.baidu.com:443 HTTP/1.1" from sp1.baidu.com
+50: Responding "HTTP/1.1 200 OK"
+48: "CONNECT sp1.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:28 2023
+48: Requesting "CONNECT sp1.baidu.com:443 HTTP/1.1" from sp1.baidu.com
+48: Responding "HTTP/1.1 200 OK"
+49: "CONNECT sp1.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:28 2023
+49: Requesting "CONNECT sp1.baidu.com:443 HTTP/1.1" from sp1.baidu.com
+49: Responding "HTTP/1.1 200 OK"
+53: "CONNECT hector.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:29 2023
+53: Requesting "CONNECT hector.baidu.com:443 HTTP/1.1" from hector.baidu.com
+53: Responding "HTTP/1.1 200 OK"
+52: "CONNECT sp2.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:29 2023
+52: Requesting "CONNECT sp2.baidu.com:443 HTTP/1.1" from sp2.baidu.com
+52: Responding "HTTP/1.1 200 OK"
+55: "CONNECT sp3.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:30 2023
+55: Requesting "CONNECT sp3.baidu.com:443 HTTP/1.1" from sp3.baidu.com
+55: Responding "HTTP/1.1 200 OK"
+54: "CONNECT passport.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 00:07:31 2023
+54: Requesting "CONNECT passport.baidu.com:443 HTTP/1.1" from passport.baidu.com
+54: Responding "HTTP/1.1 200 OK"
+1: Tunnel closed
+53: Tunnel closed
+54: Tunnel closed
+5: Tunnel closed
+19: Tunnel closed
+7: Tunnel closed
+14: Tunnel closed
+20: Tunnel closed
+22: Tunnel closed
+23: Tunnel closed

@@ -1,0 +1,25 @@
+//http://httpbin.org/cache/1
+//Disable all the firefox init connect requests
+1: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:14 2023
+2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:14 2023
+3: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:14 2023
+4: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:14 2023
+5: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:14 2023
+6: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:14 2023
+7: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:18 2023
+8: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:19 2023
+9: "GET http://httpbin.org/cache/1 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:19 2023
+9: not in cache
+9: Requesting "GET http://httpbin.org/cache/1 HTTP/1.1" from httpbin.org
+9: Received "HTTP/1.1 200 OK" from httpbin.org
+9: Responding "HTTP/1.1 200 OK"
+9: cached, expires at Tue Feb 28 03:57:20 2023
+//click again
+10: "GET http://httpbin.org/cache/1 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:35 2023
+10: in cache, but expires at Tue Feb 28 03:57:20 2023
+
+10: Requesting "GET http://httpbin.org/cache/1 HTTP/1.1" from httpbin.org
+10: Received "HTTP/1.1 200 OK" from httpbin.org
+10: Responding "HTTP/1.1 200 OK"
+10: cached, expires at Tue Feb 28 03:57:36 2023
+

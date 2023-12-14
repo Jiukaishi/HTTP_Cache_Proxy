@@ -1,0 +1,42 @@
+1: "GET http://www.360doc.com/ajax/index7/getZZZCData.ashx?artNum=20&nPage=1&nId=1053835419&isNewArt=true&sign=C4998868B18068A49806402BE75C662A565EAF02&_=1677643189434 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:59:55 2023
+1: not in cache
+1: Requesting "GET http://www.360doc.com/ajax/index7/getZZZCData.ashx?artNum=20&nPage=1&nId=1053835419&isNewArt=true&sign=C4998868B18068A49806402BE75C662A565EAF02&_=1677643189434 HTTP/1.1" from www.360doc.com
+1: Received "HTTP/1.1 200 OK" from www.360doc.com
+1: Responding "HTTP/1.1 200 OK"
+1: not cacheable becaues this is a no-store response
+2: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:59:59 2023
+2: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+2: Responding "HTTP/1.1 200 OK"
+3: "CONNECT en.wikipedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:02 2023
+3: Requesting "CONNECT en.wikipedia.org:443 HTTP/1.1" from en.wikipedia.org
+3: Responding "HTTP/1.1 200 OK"
+6: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:03 2023
+6: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
+6: Responding "HTTP/1.1 200 OK"
+5: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:03 2023
+5: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
+5: Responding "HTTP/1.1 200 OK"
+8: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:03 2023
+8: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
+8: Responding "HTTP/1.1 200 OK"
+7: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:03 2023
+7: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
+7: Responding "HTTP/1.1 200 OK"
+6: Tunnel closed
+8: Tunnel closed
+7: Tunnel closed
+9: "CONNECT login.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:04 2023
+9: Requesting "CONNECT login.wikimedia.org:443 HTTP/1.1" from login.wikimedia.org
+9: Responding "HTTP/1.1 200 OK"
+10: "CONNECT meta.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:04 2023
+10: Requesting "CONNECT meta.wikimedia.org:443 HTTP/1.1" from meta.wikimedia.org
+10: Responding "HTTP/1.1 200 OK"
+4: "CONNECT upload.wikimedia.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 23:00:04 2023
+4: Requesting "CONNECT upload.wikimedia.org:443 HTTP/1.1" from upload.wikimedia.org
+4: Responding "HTTP/1.1 200 OK"
+4: Tunnel closed
+9: Tunnel closed
+3: Tunnel closed
+2: Tunnel closed
+5: Tunnel closed
+10: Tunnel closed

@@ -1,0 +1,318 @@
+1: "GET http://www.360doc.com/index.html HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:01 2023
+1: not in cache
+1: Requesting "GET http://www.360doc.com/index.html HTTP/1.1" from www.360doc.com
+7: "GET http://www.360doc.com/js/scancodelogin.js?t=2022080301&_=1677643736728 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:01 2023
+7: not in cache
+7: Requesting "GET http://www.360doc.com/js/scancodelogin.js?t=2022080301&_=1677643736728 HTTP/1.1" from www.360doc.com
+6: "GET http://eclick.360doc.com/pcpage.jpg?code=69-1&1677643736721 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+6: not in cache
+6: Requesting "GET http://eclick.360doc.com/pcpage.jpg?code=69-1&1677643736721 HTTP/1.1" from eclick.360doc.com
+8: "GET http://hm.baidu.com/hm.js?d86954201130d615136257dde062a503 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+8: not in cache
+8: Requesting "GET http://hm.baidu.com/hm.js?d86954201130d615136257dde062a503 HTTP/1.1" from hm.baidu.com
+3: "GET http://channelpic.360doc.com/2023/20230228/202322815205912086543.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+9: "GET http://channelpic.360doc.com/2023/20230228/202322815204496233300.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+3: not in cache
+3: Requesting "GET http://channelpic.360doc.com/2023/20230228/202322815205912086543.jpg HTTP/1.1" from channelpic.360doc.com
+9: not in cache
+9: Requesting "GET http://channelpic.360doc.com/2023/20230228/202322815204496233300.jpg HTTP/1.1" from channelpic.360doc.com
+2: "GET http://channelpic.360doc.com/2023/20230228/202322815164965088960.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+2: not in cache
+2: Requesting "GET http://channelpic.360doc.com/2023/20230228/202322815164965088960.jpg HTTP/1.1" from channelpic.360doc.com
+5: "GET http://channelpic.360doc.com/2023/20230228/20232281524122565512.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+5: not in cache
+5: Requesting "GET http://channelpic.360doc.com/2023/20230228/20232281524122565512.jpg HTTP/1.1" from channelpic.360doc.com
+4: "GET http://channelpic.360doc.com/2023/20230228/202322815241256116554.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+4: not in cache
+4: Requesting "GET http://channelpic.360doc.com/2023/20230228/202322815241256116554.jpg HTTP/1.1" from channelpic.360doc.com
+6: Received "HTTP/1.1 200 OK" from eclick.360doc.com
+6: Responding "HTTP/1.1 200 OK"
+6: not cacheable becaues this is a no-store response
+26: "GET http://channelpic.360doc.com/2023/20230228/2023228152024822101584.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+26: not in cache
+26: Requesting "GET http://channelpic.360doc.com/2023/20230228/2023228152024822101584.jpg HTTP/1.1" from channelpic.360doc.com
+29: "GET http://channelpic.360doc.com/2023/20230222/2023222155410431106042.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+29: not in cache
+29: Requesting "GET http://channelpic.360doc.com/2023/20230222/2023222155410431106042.jpg HTTP/1.1" from channelpic.360doc.com
+28: "GET http://channelpic.360doc.com/2023/20230224/202322415465525791873.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+28: not in cache
+28: Requesting "GET http://channelpic.360doc.com/2023/20230224/202322415465525791873.jpg HTTP/1.1" from channelpic.360doc.com
+30: "GET http://channelpic.360doc.com/2023/20230227/2023227155113400169172.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+30: not in cache
+30: Requesting "GET http://channelpic.360doc.com/2023/20230227/2023227155113400169172.jpg HTTP/1.1" from channelpic.360doc.com
+31: "GET http://channelpic.360doc.com/2023/20230223/2023223152640994123923.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+31: not in cache
+31: Requesting "GET http://channelpic.360doc.com/2023/20230223/2023223152640994123923.jpg HTTP/1.1" from channelpic.360doc.com
+32: "GET http://channelpic.360doc.com/2023/20230228/2023228105917337130240.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+32: not in cache
+32: Requesting "GET http://channelpic.360doc.com/2023/20230228/2023228105917337130240.jpg HTTP/1.1" from channelpic.360doc.com
+13: "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/194043_1677574603711.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+13: not in cache
+13: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/194043_1677574603711.jpg HTTP/1.1" from thumbnail1.360doc.com
+18: "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/200443_1677574610226.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+18: not in cache
+18: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/200443_1677574610226.jpg HTTP/1.1" from thumbnail1.360doc.com
+10: "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/193252_1677574596883.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+10: not in cache
+10: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/193252_1677574596883.jpg HTTP/1.1" from thumbnail1.360doc.com
+20: "GET http://userimage8.360doc.com/22/0609/21/79891253_202206092131170954_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+20: not in cache
+20: Requesting "GET http://userimage8.360doc.com/22/0609/21/79891253_202206092131170954_main.jpg HTTP/1.1" from userimage8.360doc.com
+24: "GET http://userimage8.360doc.com/22/1018/10/80824572_202210181000220529_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+12: "GET http://userimage8.360doc.com/23/0220/12/81701799_202302201218560840_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+24: not in cache
+12: not in cache
+24: Requesting "GET http://userimage8.360doc.com/22/1018/10/80824572_202210181000220529_main.jpg HTTP/1.1" from userimage8.360doc.com
+14: "GET http://userimage8.360doc.com/23/0221/14/81711893_202302211445430558_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+14: not in cache
+14: Requesting "GET http://userimage8.360doc.com/23/0221/14/81711893_202302211445430558_main.jpg HTTP/1.1" from userimage8.360doc.com
+19: "GET http://userimage8.360doc.com/22/0422/07/79362171_202204220726140248_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+12: Requesting "GET http://userimage8.360doc.com/23/0220/12/81701799_202302201218560840_main.jpg HTTP/1.1" from userimage8.360doc.com
+19: not in cache
+19: Requesting "GET http://userimage8.360doc.com/22/0422/07/79362171_202204220726140248_main.jpg HTTP/1.1" from userimage8.360doc.com
+23: "GET http://userimage8.360doc.com/22/0629/10/29318310_202206291048340956_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+23: not in cache
+23: Requesting "GET http://userimage8.360doc.com/22/0629/10/29318310_202206291048340956_main.jpg HTTP/1.1" from userimage8.360doc.com
+22: "GET http://userimage8.360doc.com/23/0207/20/81602598_202302072021570939_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+22: not in cache
+22: Requesting "GET http://userimage8.360doc.com/23/0207/20/81602598_202302072021570939_main.jpg HTTP/1.1" from userimage8.360doc.com
+21: "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/196405_1677574622414.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+21: not in cache
+21: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/196405_1677574622414.jpg HTTP/1.1" from thumbnail1.360doc.com
+11: "GET http://userimage8.360doc.com/22/0428/21/30221200_202204282142260412_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+11: not in cache
+11: Requesting "GET http://userimage8.360doc.com/22/0428/21/30221200_202204282142260412_main.jpg HTTP/1.1" from userimage8.360doc.com
+25: "GET http://userimage8.360doc.com/22/1124/22/72842814_202211242240000507_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+25: not in cache
+25: Requesting "GET http://userimage8.360doc.com/22/1124/22/72842814_202211242240000507_main.jpg HTTP/1.1" from userimage8.360doc.com
+15: "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/195447_1677574616305.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+15: not in cache
+15: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/195447_1677574616305.jpg HTTP/1.1" from thumbnail1.360doc.com
+16: "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/135503_1677574589289.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+16: not in cache
+16: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/28/135503_1677574589289.jpg HTTP/1.1" from thumbnail1.360doc.com
+17: "GET http://userimage8.360doc.com/23/0226/11/61949285_202302261141180988_main.jpg HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+17: not in cache
+17: Requesting "GET http://userimage8.360doc.com/23/0226/11/61949285_202302261141180988_main.jpg HTTP/1.1" from userimage8.360doc.com
+7: Received "HTTP/1.1 200 OK" from www.360doc.com
+7: Responding "HTTP/1.1 200 OK"
+7: cached, expires at Thu Mar 16 04:09:02 2023
+
+27: "GET http://pubimage.360doc.com/head/papercut/003.gif HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:02 2023
+27: not in cache
+27: Requesting "GET http://pubimage.360doc.com/head/papercut/003.gif HTTP/1.1" from pubimage.360doc.com
+26: Received "HTTP/1.1 200 OK" from channelpic.360doc.com
+26: Responding "HTTP/1.1 200 OK"
+26: cached, expires at Wed Mar  1 06:13:53 2023
+
+27: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+27: Responding "HTTP/1.1 200 OK"
+27: cached, expires at Fri Mar 31 04:09:03 2023
+
+20: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+20: Responding "HTTP/1.1 200 OK"
+20: cached, expires at Mon Mar 27 15:12:49 2023
+
+28: Received "HTTP/1.1 200 OK" from channelpic.360doc.com
+28: Responding "HTTP/1.1 200 OK"
+28: cached, expires at Wed Mar  1 15:47:15 2023
+
+24: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+12: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+23: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+24: Responding "HTTP/1.1 200 OK"
+12: Responding "HTTP/1.1 200 OK"
+12: cached, expires at Thu Mar  2 01:44:03 2023
+
+24: cached, expires at Thu Mar  2 01:44:03 2023
+
+19: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+19: Responding "HTTP/1.1 200 OK"
+19: cached, expires at Sat Apr  1 11:49:19 2023
+
+29: Received "HTTP/1.1 200 OK" from channelpic.360doc.com
+23: Responding "HTTP/1.1 200 OK"
+23: cached, expires at Sat Mar 25 16:17:05 2023
+
+29: Responding "HTTP/1.1 200 OK"
+29: cached, expires at Wed Mar  1 20:34:32 2023
+
+11: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+11: Responding "HTTP/1.1 200 OK"
+11: cached, expires at Fri Mar 31 19:59:42 2023
+
+25: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+25: Responding "HTTP/1.1 200 OK"
+25: cached, expires at Fri Mar 10 19:53:57 2023
+
+17: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+17: Responding "HTTP/1.1 200 OK"
+17: cached, expires at Wed Mar  1 11:23:49 2023
+
+30: Received "HTTP/1.1 200 OK" from channelpic.360doc.com
+30: Responding "HTTP/1.1 200 OK"
+30: cached, expires at Wed Mar  1 08:34:50 2023
+
+31: Received "HTTP/1.1 200 OK" from channelpic.360doc.com
+31: Responding "HTTP/1.1 200 OK"
+31: cached, expires at Wed Mar  1 18:13:17 2023
+
+32: Received "HTTP/1.1 200 OK" from channelpic.360doc.com
+32: Responding "HTTP/1.1 200 OK"
+32: cached, expires at Wed Mar  1 06:40:01 2023
+
+33: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:03 2023
+33: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+33: Responding "HTTP/1.1 200 OK"
+34: "CONNECT hm.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:03 2023
+34: Requesting "CONNECT hm.baidu.com:443 HTTP/1.1" from hm.baidu.com
+34: Responding "HTTP/1.1 200 OK"
+1: Received "HTTP/1.1 200 OK" from www.360doc.com
+1: Responding "HTTP/1.1 200 OK"
+1: cached, expires at Wed Mar  1 04:19:03 2023
+
+35: "CONNECT reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:08 2023
+35: Requesting "CONNECT reddit.com:443 HTTP/1.1" from reddit.com
+35: Responding "HTTP/1.1 200 OK"
+36: "CONNECT www.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:09 2023
+36: Requesting "CONNECT www.reddit.com:443 HTTP/1.1" from www.reddit.com
+36: Responding "HTTP/1.1 200 OK"
+40: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:10 2023
+40: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+40: Responding "HTTP/1.1 200 OK"
+37: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:10 2023
+38: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:10 2023
+42: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:10 2023
+37: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+37: Responding "HTTP/1.1 200 OK"
+39: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:10 2023
+39: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+39: Responding "HTTP/1.1 200 OK"
+38: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+38: Responding "HTTP/1.1 200 OK"
+42: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+42: Responding "HTTP/1.1 200 OK"
+41: "CONNECT www.redditstatic.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:10 2023
+41: Requesting "CONNECT www.redditstatic.com:443 HTTP/1.1" from www.redditstatic.com
+41: Responding "HTTP/1.1 200 OK"
+42: Tunnel closed
+41: Tunnel closed
+37: Tunnel closed
+40: Tunnel closed
+38: Tunnel closed
+43: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+43: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+43: Responding "HTTP/1.1 200 OK"
+47: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+47: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+50: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+50: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+47: Responding "HTTP/1.1 200 OK"
+50: Responding "HTTP/1.1 200 OK"
+52: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+52: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+52: Responding "HTTP/1.1 200 OK"
+54: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+54: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+54: Responding "HTTP/1.1 200 OK"
+44: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+44: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+44: Responding "HTTP/1.1 200 OK"
+46: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+46: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+51: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+51: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+51: Responding "HTTP/1.1 200 OK"
+48: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+48: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+48: Responding "HTTP/1.1 200 OK"
+46: Responding "HTTP/1.1 200 OK"
+53: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+53: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+53: Responding "HTTP/1.1 200 OK"
+49: "CONNECT preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+49: Requesting "CONNECT preview.redd.it:443 HTTP/1.1" from preview.redd.it
+49: Responding "HTTP/1.1 200 OK"
+45: "CONNECT a.thumbs.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+45: Requesting "CONNECT a.thumbs.redditmedia.com:443 HTTP/1.1" from a.thumbs.redditmedia.com
+45: Responding "HTTP/1.1 200 OK"
+56: "CONNECT styles.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+56: Requesting "CONNECT styles.redditmedia.com:443 HTTP/1.1" from styles.redditmedia.com
+56: Responding "HTTP/1.1 200 OK"
+55: "CONNECT external-preview.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+55: Requesting "CONNECT external-preview.redd.it:443 HTTP/1.1" from external-preview.redd.it
+55: Responding "HTTP/1.1 200 OK"
+48: Tunnel closed
+57: "CONNECT w3-reporting.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:11 2023
+57: Requesting "CONNECT w3-reporting.reddit.com:443 HTTP/1.1" from w3-reporting.reddit.com
+57: Responding "HTTP/1.1 200 OK"
+44: Tunnel closed
+49: Tunnel closed
+53: Tunnel closed
+54: Tunnel closed
+52: Tunnel closed
+56: Tunnel closed
+47: Tunnel closed
+46: Tunnel closed
+50: Tunnel closed
+58: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+58: Requesting "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from mozilla.cloudflare-dns.com
+58: Responding "HTTP/1.1 200 OK"
+59: "CONNECT www.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+59: Requesting "CONNECT www.redditmedia.com:443 HTTP/1.1" from www.redditmedia.com
+59: Responding "HTTP/1.1 200 OK"
+60: "CONNECT gql.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+60: Requesting "CONNECT gql.reddit.com:443 HTTP/1.1" from gql.reddit.com
+60: Responding "HTTP/1.1 200 OK"
+62: "CONNECT gql.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+62: Requesting "CONNECT gql.reddit.com:443 HTTP/1.1" from gql.reddit.com
+62: Responding "HTTP/1.1 200 OK"
+63: "CONNECT gql.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+63: Requesting "CONNECT gql.reddit.com:443 HTTP/1.1" from gql.reddit.com
+61: "CONNECT gql.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+61: Requesting "CONNECT gql.reddit.com:443 HTTP/1.1" from gql.reddit.com
+61: Responding "HTTP/1.1 200 OK"
+63: Responding "HTTP/1.1 200 OK"
+64: "CONNECT v.redd.it:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+64: Requesting "CONNECT v.redd.it:443 HTTP/1.1" from v.redd.it
+64: Responding "HTTP/1.1 200 OK"
+63: Tunnel closed
+65: "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:12 2023
+65: Requesting "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from b.thumbs.redditmedia.com
+65: Responding "HTTP/1.1 200 OK"
+61: Tunnel closed
+62: Tunnel closed
+66: "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:13 2023
+66: Requesting "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from b.thumbs.redditmedia.com
+66: Responding "HTTP/1.1 200 OK"
+68: "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:13 2023
+68: Requesting "CONNECT b.thumbs.redditmedia.com:443 HTTP/1.1" from b.thumbs.redditmedia.com
+68: Responding "HTTP/1.1 200 OK"
+67: "CONNECT www.googletagmanager.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:13 2023
+67: Requesting "CONNECT www.googletagmanager.com:443 HTTP/1.1" from www.googletagmanager.com
+67: Responding "HTTP/1.1 200 OK"
+65: Tunnel closed
+69: "CONNECT id.rlcdn.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:13 2023
+69: Requesting "CONNECT id.rlcdn.com:443 HTTP/1.1" from id.rlcdn.com
+69: Responding "HTTP/1.1 200 OK"
+70: "CONNECT alb.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:13 2023
+70: Requesting "CONNECT alb.reddit.com:443 HTTP/1.1" from alb.reddit.com
+70: Responding "HTTP/1.1 200 OK"
+71: "CONNECT alb.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:13 2023
+71: Requesting "CONNECT alb.reddit.com:443 HTTP/1.1" from alb.reddit.com
+71: Responding "HTTP/1.1 200 OK"
+66: Tunnel closed
+71: Tunnel closed
+73: "CONNECT sb.scorecardresearch.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:14 2023
+73: Requesting "CONNECT sb.scorecardresearch.com:443 HTTP/1.1" from sb.scorecardresearch.com
+73: Responding "HTTP/1.1 200 OK"
+72: "CONNECT ad.doubleclick.net:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:14 2023
+72: Requesting "CONNECT ad.doubleclick.net:443 HTTP/1.1" from ad.doubleclick.net
+72: Responding "HTTP/1.1 200 OK"
+34: Tunnel closed
+74: "CONNECT gateway.reddit.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:14 2023
+74: Requesting "CONNECT gateway.reddit.com:443 HTTP/1.1" from gateway.reddit.com
+74: Responding "HTTP/1.1 200 OK"
+75: "CONNECT accounts.google.com:443 HTTP/1.1" from 174.109.111.24 @ Wed Mar  1 04:09:14 2023
+75: Requesting "CONNECT accounts.google.com:443 HTTP/1.1" from accounts.google.com
+75: Responding "HTTP/1.1 200 OK"

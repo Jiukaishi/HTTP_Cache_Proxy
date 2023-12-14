@@ -1,0 +1,380 @@
+Test CONNECT: https://google/com (take 1-2 mins for tunnel to close)
+1: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:22:49 2023
+1: Requesting "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from mozilla.cloudflare-dns.com
+1: Responding "HTTP/1.1 200 OK"
+3: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:22:50 2023
+3: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+3: Responding "HTTP/1.1 200 OK"
+2: "CONNECT push.services.mozilla.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:22:50 2023
+2: Requesting "CONNECT push.services.mozilla.com:443 HTTP/1.1" from push.services.mozilla.com
+2: Responding "HTTP/1.1 200 OK"
+4: "CONNECT adservice.google.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:22:51 2023
+4: Requesting "CONNECT adservice.google.com:443 HTTP/1.1" from adservice.google.com
+4: Responding "HTTP/1.1 200 OK"
+5: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 22:22:51 2023
+5: Requesting "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from googleads.g.doubleclick.net
+5: Responding "HTTP/1.1 200 OK"
+5: Tunnel closed
+4: Tunnel closed
+3: Tunnel closed
+
+Test POST: http://httpbin.org/post
+Result:
+1: "POST http://httpbin.org/post HTTP/1.1" from 152.3.76.22 @ Tue Feb 28 00:15:39 2023
+1: Received "HTTP/1.1 200 OK" from httpbin.org
+1: Responding "HTTP/1.1 200 OK"
+2: "POST http://httpbin.org/post HTTP/1.1" from 152.3.76.22 @ Tue Feb 28 00:15:44 2023
+2: Received "HTTP/1.1 200 OK" from httpbin.org
+2: Responding "HTTP/1.1 200 OK"
+
+Test CONNECT: www.google.com
+Result:
+1: "CONNECT www.google.com:443 HTTP/1.1" from 152.3.76.22 @ Tue Feb 28 16:01:29 2023
+1: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+1: Responding "HTTP/1.1 200 OK"
+1: Tunnel closed
+2: "CONNECT www.google.com:443 HTTP/1.1" from 152.3.76.22 @ Tue Feb 28 16:01:32 2023
+2: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+2: Responding "HTTP/1.1 200 OK"
+2: Tunnel closed
+
+Test GET: http://httpbin.org/cache/1 (maxage=1, click twice)
+1: "GET http://httpbin.org/cache/1 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:19 2023
+1: not in cache
+1: Requesting "GET http://httpbin.org/cache/1 HTTP/1.1" from httpbin.org
+1: Received "HTTP/1.1 200 OK" from httpbin.org
+1: Responding "HTTP/1.1 200 OK"
+1: cached, expires at Tue Feb 28 03:57:20 2023
+
+2: "GET http://httpbin.org/cache/1 HTTP/1.1" from 174.109.111.24 @ Mon Feb 27 22:57:35 2023
+2: in cache, but expires at Tue Feb 28 03:57:20 2023
+2: Requesting "GET http://httpbin.org/cache/1 HTTP/1.1" from httpbin.org
+2: Received "HTTP/1.1 200 OK" from httpbin.org
+2: Responding "HTTP/1.1 200 OK"
+2: cached, expires at Tue Feb 28 03:57:36 2023
+
+
+Test GET: http://httpbin.org/cache/10000 (maxage=10000, click twice)
+1: "GET http://httpbin.org/cache/10000 HTTP/1.1" from 67.159.88.124 @ Tue Feb 28 01:06:29 2023
+1: not in cache
+1: Requesting "GET http://httpbin.org/cache/10000 HTTP/1.1" from httpbin.org
+1: Received "HTTP/1.1 200 OK" from httpbin.org
+1: Responding "HTTP/1.1 200 OK"
+1: cached, expires at Tue Feb 28 08:53:09 2023
+
+2: "GET http://httpbin.org/cache/10000 HTTP/1.1" from 67.159.88.124 @ Tue Feb 28 01:06:31 2023
+2: in cache, valid
+
+Test GET "ajsjdioqodasokdoq.com HTTP/1.1" (Bad Request)
+1: "GET ajsjdioqodasokdoq.com HTTP/1.1" from 67.159.88.124 @ Tue Feb 28 21:58:02 2023
+1: Responding "HTTP/1.1 400 Bad Request"
+
+Test GET: http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx (chunked get)
+1: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 67.159.88.124 @ Tue Feb 28 22:01:23 2023
+1: not in cache
+1: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from httpwatch.com
+1: Received "HTTP/1.1 200 OK" from httpwatch.com
+1: Responding "HTTP/1.1 200 OK"
+1: not cacheable becaues this is a no-store response
+
+
+
+
+
+
+
+
+
+
+===================Below is a test using firefox requesting http://www.360doc.com/index.html, https://google.com and http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx==========================
+2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:20 2023
+2: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+2: Responding "HTTP/1.1 200 OK"
+4: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:20 2023
+4: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+4: Responding "HTTP/1.1 200 OK"
+3: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:20 2023
+3: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+3: Responding "HTTP/1.1 200 OK"
+5: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:20 2023
+5: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+5: Responding "HTTP/1.1 200 OK"
+6: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:20 2023
+6: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+6: Responding "HTTP/1.1 200 OK"
+1: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:20 2023
+1: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+1: Responding "HTTP/1.1 200 OK"
+16: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:21 2023
+14: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:21 2023
+13: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:21 2023
+17: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:21 2023
+15: "POST http://r3.o.lencr.org/ HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:21 2023
+7: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:21 2023
+7: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+7: Responding "HTTP/1.1 200 OK"
+8: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:22 2023
+8: Requesting "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from img-getpocket.cdn.mozilla.net
+8: Responding "HTTP/1.1 200 OK"
+7: Tunnel closed
+5: Tunnel closed
+2: Tunnel closed
+8: Tunnel closed
+6: Tunnel closed
+3: Tunnel closed
+4: Tunnel closed
+18: "GET http://www.360doc.com/index.html HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:24 2023
+18: not in cache
+18: Requesting "GET http://www.360doc.com/index.html HTTP/1.1" from www.360doc.com
+20: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:25 2023
+21: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:25 2023
+21: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+21: Responding "HTTP/1.1 200 OK"
+19: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:25 2023
+19: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+19: Responding "HTTP/1.1 200 OK"
+20: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+20: Responding "HTTP/1.1 200 OK"
+22: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:25 2023
+22: Requesting "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from incoming.telemetry.mozilla.org
+22: Responding "HTTP/1.1 200 OK"
+23: "GET http://www.360doc.com/js/index7/index_new_20210813.js?t=2023022301 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:25 2023
+23: not in cache
+23: Requesting "GET http://www.360doc.com/js/index7/index_new_20210813.js?t=2023022301 HTTP/1.1" from www.360doc.com
+23: Received "HTTP/1.1 200 OK" from www.360doc.com
+23: Responding "HTTP/1.1 200 OK"
+23: cached, expires at Wed Mar 15 06:15:25 2023
+
+19: Tunnel closed
+26: "GET http://www.360doc.com/js/scancodelogin.js?t=2022080301&_=1677564923444 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+26: not in cache
+26: Requesting "GET http://www.360doc.com/js/scancodelogin.js?t=2022080301&_=1677564923444 HTTP/1.1" from www.360doc.com
+20: Tunnel closed
+24: "GET http://hm.baidu.com/hm.js?d86954201130d615136257dde062a503 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+24: not in cache
+24: Requesting "GET http://hm.baidu.com/hm.js?d86954201130d615136257dde062a503 HTTP/1.1" from hm.baidu.com
+28: "GET http://eclick.360doc.com/pcpage.jpg?code=69-1&1677564923435 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+28: not in cache
+28: Requesting "GET http://eclick.360doc.com/pcpage.jpg?code=69-1&1677564923435 HTTP/1.1" from eclick.360doc.com
+24: Received "HTTP/1.1 304 Not Modified" from hm.baidu.com
+24: Responding "HTTP/1.1 304 Not Modified"
+24: cached, expires at Tue Feb 28 06:15:26 2023
+
+30: "GET http://channelpic.360doc.com/2023/20230227/2023227154055869114256.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+30: not in cache
+30: Requesting "GET http://channelpic.360doc.com/2023/20230227/2023227154055869114256.jpg HTTP/1.1" from channelpic.360doc.com
+31: "GET http://channelpic.360doc.com/2023/20230227/2023227154055885128505.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+31: not in cache
+31: Requesting "GET http://channelpic.360doc.com/2023/20230227/2023227154055885128505.jpg HTTP/1.1" from channelpic.360doc.com
+29: "GET http://channelpic.360doc.com/2023/20230227/2023227154915369119333.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+29: not in cache
+29: Requesting "GET http://channelpic.360doc.com/2023/20230227/2023227154915369119333.jpg HTTP/1.1" from channelpic.360doc.com
+28: Received "HTTP/1.1 200 OK" from eclick.360doc.com
+28: Responding "HTTP/1.1 200 OK"
+28: cached, but requires re-validation 
+25: "GET http://channelpic.360doc.com/2023/20230227/202322715405588575182.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+25: not in cache
+25: Requesting "GET http://channelpic.360doc.com/2023/20230227/202322715405588575182.jpg HTTP/1.1" from channelpic.360doc.com
+27: "GET http://channelpic.360doc.com/2023/20230227/202322715463768187238.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:26 2023
+27: not in cache
+27: Requesting "GET http://channelpic.360doc.com/2023/20230227/202322715463768187238.jpg HTTP/1.1" from channelpic.360doc.com
+30: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+30: Responding "HTTP/1.1 304 Not Modified"
+30: cached, expires at Tue Feb 28 08:00:53 2023
+
+29: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+29: Responding "HTTP/1.1 304 Not Modified"
+29: cached, expires at Tue Feb 28 08:00:03 2023
+
+31: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+31: Responding "HTTP/1.1 304 Not Modified"
+31: cached, expires at Tue Feb 28 08:00:53 2023
+
+25: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+25: Responding "HTTP/1.1 304 Not Modified"
+25: cached, expires at Tue Feb 28 08:00:53 2023
+
+27: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+27: Responding "HTTP/1.1 304 Not Modified"
+27: cached, expires at Tue Feb 28 08:00:18 2023
+
+33: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:27 2023
+33: Requesting "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from mozilla.cloudflare-dns.com
+32: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:27 2023
+32: Requesting "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from mozilla.cloudflare-dns.com
+32: Responding "HTTP/1.1 200 OK"
+33: Responding "HTTP/1.1 200 OK"
+33: Tunnel closed
+34: "CONNECT www.google.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:27 2023
+34: Requesting "CONNECT www.google.com:443 HTTP/1.1" from www.google.com
+34: Responding "HTTP/1.1 200 OK"
+34: Tunnel closed
+26: Received "HTTP/1.1 200 OK" from www.360doc.com
+26: Responding "HTTP/1.1 200 OK"
+26: cached, expires at Wed Mar 15 06:15:28 2023
+
+35: "CONNECT hm.baidu.com:443 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+35: Requesting "CONNECT hm.baidu.com:443 HTTP/1.1" from hm.baidu.com
+35: Responding "HTTP/1.1 200 OK"
+48: "POST http://ocsp.globalsign.com/gsrsaovsslca2018 HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+45: "GET http://channelpic.360doc.com/2023/20230223/2023223152640994123923.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+45: not in cache
+45: Requesting "GET http://channelpic.360doc.com/2023/20230223/2023223152640994123923.jpg HTTP/1.1" from channelpic.360doc.com
+46: "GET http://channelpic.360doc.com/2023/20230222/2023222155410431106042.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+46: not in cache
+46: Requesting "GET http://channelpic.360doc.com/2023/20230222/2023222155410431106042.jpg HTTP/1.1" from channelpic.360doc.com
+47: "GET http://channelpic.360doc.com/2023/20230221/202322115533485175928.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+47: not in cache
+47: Requesting "GET http://channelpic.360doc.com/2023/20230221/202322115533485175928.jpg HTTP/1.1" from channelpic.360doc.com
+36: "GET http://thumbnail1.360doc.com/videoimg/2023/02/27/186759_1677489485262.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+36: not in cache
+36: Requesting "GET http://thumbnail1.360doc.com/videoimg/2023/02/27/186759_1677489485262.jpg HTTP/1.1" from thumbnail1.360doc.com
+43: "GET http://userimage8.360doc.com/22/0214/23/78632604_202202142324010910_main.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+43: not in cache
+37: "GET http://userimage8.360doc.com/23/0216/19/81673938_202302161907300967_main.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+43: Requesting "GET http://userimage8.360doc.com/22/0214/23/78632604_202202142324010910_main.jpg HTTP/1.1" from userimage8.360doc.com
+37: not in cache
+37: Requesting "GET http://userimage8.360doc.com/23/0216/19/81673938_202302161907300967_main.jpg HTTP/1.1" from userimage8.360doc.com
+39: "GET http://userimage8.360doc.com/22/0513/13/79613376_202205131300150135_main.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+39: not in cache
+38: "GET http://userimage8.360doc.com/23/0220/17/81704619_202302201718050480_main.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+38: not in cache
+39: Requesting "GET http://userimage8.360doc.com/22/0513/13/79613376_202205131300150135_main.jpg HTTP/1.1" from userimage8.360doc.com
+38: Requesting "GET http://userimage8.360doc.com/23/0220/17/81704619_202302201718050480_main.gif HTTP/1.1" from userimage8.360doc.com
+40: "GET http://userimage8.360doc.com/20/0924/14/71139257_202009241444460816_main.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+40: not in cache
+40: Requesting "GET http://userimage8.360doc.com/20/0924/14/71139257_202009241444460816_main.jpg HTTP/1.1" from userimage8.360doc.com
+44: "GET http://userimage8.360doc.com/22/1206/16/81238375_202212061624420154_main.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+44: not in cache
+44: Requesting "GET http://userimage8.360doc.com/22/1206/16/81238375_202212061624420154_main.jpg HTTP/1.1" from userimage8.360doc.com
+49: "GET http://channelpic.360doc.com/2023/20230227/202322711516196151666.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:29 2023
+49: not in cache
+49: Requesting "GET http://channelpic.360doc.com/2023/20230227/202322711516196151666.jpg HTTP/1.1" from channelpic.360doc.com
+50: "GET http://www.gov.cn/ HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+50: not in cache
+50: Requesting "GET http://www.gov.cn/ HTTP/1.1" from www.gov.cn
+45: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+45: Responding "HTTP/1.1 304 Not Modified"
+45: cached, expires at Tue Feb 28 17:38:22 2023
+
+41: "GET http://channelpic.360doc.com/2023/20230227/2023227155113400169172.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+41: not in cache
+41: Requesting "GET http://channelpic.360doc.com/2023/20230227/2023227155113400169172.jpg HTTP/1.1" from channelpic.360doc.com
+42: "GET http://channelpic.360doc.com/2023/20230224/202322415465525791873.jpg HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+42: not in cache
+42: Requesting "GET http://channelpic.360doc.com/2023/20230224/202322415465525791873.jpg HTTP/1.1" from channelpic.360doc.com
+46: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+46: Responding "HTTP/1.1 304 Not Modified"
+46: cached, expires at Tue Feb 28 19:59:38 2023
+
+47: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+47: Responding "HTTP/1.1 304 Not Modified"
+47: cached, expires at Tue Feb 28 22:23:41 2023
+
+36: Received "HTTP/1.1 304 Not Modified" from thumbnail1.360doc.com
+36: Responding "HTTP/1.1 304 Not Modified"
+36: cached, expires at Tue Feb 28 07:51:14 2023
+
+37: Received "HTTP/1.1 304 Not Modified" from userimage8.360doc.com
+37: Responding "HTTP/1.1 304 Not Modified"
+37: cached, expires at Wed Mar  1 10:04:17 2023
+
+43: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+43: Responding "HTTP/1.1 200 OK"
+43: cached, expires at Fri Apr  7 02:26:38 2023
+
+39: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+39: Responding "HTTP/1.1 200 OK"
+39: cached, expires at Wed Mar 29 08:17:01 2023
+
+40: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+40: Responding "HTTP/1.1 200 OK"
+40: cached, expires at Sat May 27 22:30:34 2023
+
+38: Received "HTTP/1.1 304 Not Modified" from userimage8.360doc.com
+38: Responding "HTTP/1.1 304 Not Modified"
+38: cached, expires at Wed Mar  1 00:39:14 2023
+
+44: Received "HTTP/1.1 200 OK" from userimage8.360doc.com
+44: Responding "HTTP/1.1 200 OK"
+44: cached, expires at Wed Mar  8 15:08:34 2023
+
+49: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+49: Responding "HTTP/1.1 304 Not Modified"
+49: cached, expires at Tue Feb 28 08:23:56 2023
+
+41: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+41: Responding "HTTP/1.1 304 Not Modified"
+41: cached, expires at Tue Feb 28 07:59:55 2023
+
+42: Received "HTTP/1.1 304 Not Modified" from channelpic.360doc.com
+42: Responding "HTTP/1.1 304 Not Modified"
+42: cached, expires at Tue Feb 28 15:12:21 2023
+
+59: "GET http://pubimage.360doc.com/index/num-3.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+59: not in cache
+59: Requesting "GET http://pubimage.360doc.com/index/num-3.gif HTTP/1.1" from pubimage.360doc.com
+56: "GET http://pubimage.360doc.com/index7/icon_yuan2.png HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+56: not in cache
+56: Requesting "GET http://pubimage.360doc.com/index7/icon_yuan2.png HTTP/1.1" from pubimage.360doc.com
+54: "GET http://pubimage.360doc.com/index/num-4.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+54: not in cache
+54: Requesting "GET http://pubimage.360doc.com/index/num-4.gif HTTP/1.1" from pubimage.360doc.com
+57: "GET http://pubimage.360doc.com/index/num-2.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+57: not in cache
+55: "GET http://pubimage.360doc.com/index/num-6.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+57: Requesting "GET http://pubimage.360doc.com/index/num-2.gif HTTP/1.1" from pubimage.360doc.com
+55: not in cache
+51: "GET http://pubimage.360doc.com/index7/top_slide_btn.png HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+55: Requesting "GET http://pubimage.360doc.com/index/num-6.gif HTTP/1.1" from pubimage.360doc.com
+51: not in cache
+51: Requesting "GET http://pubimage.360doc.com/index7/top_slide_btn.png HTTP/1.1" from pubimage.360doc.com
+52: "GET http://pubimage.360doc.com/index7/jiangnew2.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+52: not in cache
+52: Requesting "GET http://pubimage.360doc.com/index7/jiangnew2.gif HTTP/1.1" from pubimage.360doc.com
+53: "GET http://pubimage.360doc.com/index/num-1.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+53: not in cache
+53: Requesting "GET http://pubimage.360doc.com/index/num-1.gif HTTP/1.1" from pubimage.360doc.com
+58: "GET http://pubimage.360doc.com/index/num-5.gif HTTP/1.1" from 174.109.111.24 @ Tue Feb 28 01:15:30 2023
+58: not in cache
+58: Requesting "GET http://pubimage.360doc.com/index/num-5.gif HTTP/1.1" from pubimage.360doc.com
+59: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+59: Responding "HTTP/1.1 200 OK"
+59: cached, expires at Thu Mar 30 06:15:30 2023
+
+56: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+56: Responding "HTTP/1.1 200 OK"
+56: cached, expires at Thu Mar 30 06:15:30 2023
+
+54: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+54: Responding "HTTP/1.1 200 OK"
+55: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+54: cached, expires at Thu Mar 30 06:15:30 2023
+
+55: Responding "HTTP/1.1 200 OK"
+55: cached, expires at Thu Mar 30 06:15:30 2023
+
+57: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+57: Responding "HTTP/1.1 200 OK"
+57: cached, expires at Thu Mar 30 06:15:30 2023
+
+52: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+52: Responding "HTTP/1.1 200 OK"
+51: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+52: cached, expires at Thu Mar 30 06:15:30 2023
+
+51: Responding "HTTP/1.1 200 OK"
+51: cached, expires at Thu Mar 30 06:15:30 2023
+
+53: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+53: Responding "HTTP/1.1 200 OK"
+53: cached, expires at Thu Mar 30 06:15:30 2023
+
+58: Received "HTTP/1.1 200 OK" from pubimage.360doc.com
+58: Responding "HTTP/1.1 200 OK"
+58: cached, expires at Thu Mar 30 06:15:30 2023
+
+50: Received "HTTP/1.1 200 OK" from www.gov.cn
+50: Responding "HTTP/1.1 200 OK"
+50: cached, expires at Thu Mar 30 06:15:30 2023
+
